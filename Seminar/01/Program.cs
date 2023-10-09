@@ -5,7 +5,7 @@
 // 456 -> 5
 // 782 -> 8
 // 918 -> 1
-int ReadInt(string msg)
+int ReadInt(string msg) // Объявление функции и строковый параметр msg
 {
 
     Console.WriteLine(msg);
