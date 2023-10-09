@@ -13,7 +13,7 @@ int ReadInt(string msg)
 }
 int a = ReadInt("Введите порядковый номер дня недели:");
 
-if (a > 1 & a < 8)
+if (a > 0 & a < 8)
 {
     if (a == 6 | a == 7)
     {
