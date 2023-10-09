@@ -14,7 +14,14 @@ int ReadInt(string msg)
     return a;
 }
 int a = ReadInt("Введите трёхзначное число:");
-if (a > 99)
+int result = -1;
+if (a >= 100)
 {
-
+    while (a > 999)
+    {
+        a = a / 10;
+    }
+    result = a % 10;
+    Console.WriteLine(result);
 }
+else { Console.WriteLine("Третьей цифры нет"); }
