@@ -18,4 +18,4 @@ if (a < 1000 & a > 99)
 {
     Console.WriteLine(a % 10);
 }
-Console.WriteLine("Введено число вне диапазона");
+else {Console.WriteLine("Введено число вне диапазона");}
