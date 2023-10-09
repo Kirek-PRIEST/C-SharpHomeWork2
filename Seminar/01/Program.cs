@@ -5,12 +5,17 @@
 // 456 -> 5
 // 782 -> 8
 // 918 -> 1
-Console.WriteLine("Введите число:");
-string numb = Console.ReadLine();
-int a = int.Parse(numb);
+int ReadInt(string msg)
+{
 
-if (a<1000 & a>99)
-    {
-    Console.WriteLine(a%10);
-    }
-    Console.WriteLine("Введено число вне диапазона");
+    Console.WriteLine(msg);
+    string numb = Console.ReadLine();
+    int a = int.Parse(numb);
+    return a;
+}
+int a = ReadInt("Введите трёхзначное число:");
+if (a < 1000 & a > 99)
+{
+    Console.WriteLine(a % 10);
+}
+Console.WriteLine("Введено число вне диапазона");
